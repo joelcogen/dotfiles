@@ -1,0 +1,25 @@
+[user]
+	name = Joel Cogen
+	email = joel@joelcogen.com
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	interactive = auto
+	ui = true
+	pager = true
+[core]
+	editor = nano
+[alias]
+	ci = commit
+	st = status
+	co = checkout
+	cob = checkout -b
+	d = diff
+	ps = push
+	pl = pull
+	poule = pull
+	m = merge
+	ms = merge --squash
+	b = branch
+	rb = rebase
