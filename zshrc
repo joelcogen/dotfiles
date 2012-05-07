@@ -40,15 +40,13 @@ eval "$(rbenv init -)"
 export EDITOR='nano'
 
 # RAILS =======================================================================
-alias ss='script/server' # start up the beast
-alias rs='rails server' # start up the beast 3
-alias sc='script/console' # obvious
-alias rc='rails console' # obvious 3
-alias rdbm='rake db:migrate' # migrations
-alias rdbr='rake db:reset' # reset db from schema
+alias rs='rails server'
+alias rc='rails console'
+alias rdbm='rake db:migrate'
+alias rdbr='rake db:reset'
 alias r='rails'
-alias m='mine .'
 alias touchmytralala='touch tmp/restart.txt'
+alias v='mvim .'
 
 # CUCUMBER ====================================================================
 alias cucumber='bundle exec cucumber -r features'
@@ -58,9 +56,5 @@ alias nightcukes="cucumber; osascript -e 'tell application \"System Events\" to 
 alias g='git'
 alias gx='gitx --all'
 alias gitcia='git add .; git ci -a'
-
-#alias mysql=/usr/local/mysql/bin/mysql
-#alias mysqladmin=/usr/local/mysql/bin/mysqladmin
-#export PATH="/usr/local/bin:$PATH"
 
 alias locomotive=/Users/joel/Progra/Belighted/cms/locomotive_editor/bin/locomotive_editor
