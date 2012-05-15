@@ -9,7 +9,7 @@
 	ui = true
 	pager = true
 [core]
-	editor = nano
+	editor = vim
 [alias]
 	ci = commit
 	st = status
