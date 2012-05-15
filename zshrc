@@ -37,7 +37,7 @@ alias la='ls -hAl'
 # Rbenv =======================================================================
 eval "$(rbenv init -)"
 
-export EDITOR='nano'
+export EDITOR='vim'
 
 # RAILS =======================================================================
 alias rs='rails server'
