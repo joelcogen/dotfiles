@@ -47,7 +47,7 @@ alias rdbr='rake db:reset'
 alias r='rails'
 alias touchmytralala='touch tmp/restart.txt'
 alias v='vim'
-alias vv='mvim .'
+alias vv='mvim'
 
 # CUCUMBER ====================================================================
 alias cucumber='bundle exec cucumber -r features'
