@@ -49,9 +49,11 @@ alias touchmytralala='touch tmp/restart.txt'
 alias v='vim'
 alias vv='mvim'
 
-# CUCUMBER ====================================================================
+# RSPEC + CUCUMBER ============================================================
+alias rspec='bundle exec rspec -c'
 alias cucumber='bundle exec cucumber -r features'
 alias nightcukes="cucumber; osascript -e 'tell application \"System Events\" to sleep'"
+alias ats='bundle exec autotest'
 
 # GIT =========================================================================
 alias g='git'
