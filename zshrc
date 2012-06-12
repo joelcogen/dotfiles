@@ -29,7 +29,7 @@ plugins=(git osx ruby brew bundler cap github rbenv rails3 textmate)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:$HOME/.rbenv/bin
 
 alias ll='ls -hl'
 alias la='ls -hAl'
@@ -46,6 +46,12 @@ alias rdbm='rake db:migrate'
 alias rdbr='rake db:reset'
 alias r='rails'
 alias touchmytralala='touch tmp/restart.txt'
+alias csdm='bundle exec cap staging deploy:migrations'
+
+# VAGRANT =====================================================================
+alias vag='vagrant'
+
+# VIM =========================================================================
 alias v='vim'
 alias vv='mvim'
 
@@ -59,5 +65,4 @@ alias ats='bundle exec autotest'
 alias g='git'
 alias gx='gitx --all'
 alias gitcia='git add .; git ci -a'
-
-alias locomotive=/Users/joel/Progra/Belighted/cms/locomotive_editor/bin/locomotive_editor
+alias got='git'
