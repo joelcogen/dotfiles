@@ -66,3 +66,6 @@ alias g='git'
 alias gx='gitx --all'
 alias gitcia='git add .; git ci -a'
 alias got='git'
+
+export LC_CTYPE=en_US.UTF-8
+export LANG=en_US.UTF-8
