@@ -1,6 +1,6 @@
 [user]
 	name = Joel Cogen
-	email = joel@joelcogen.com
+	email = joelcogen42@gmail.com
 [color]
 	diff = auto
 	status = auto
@@ -23,3 +23,4 @@
 	ms = merge --squash
 	b = branch
 	rb = rebase
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
