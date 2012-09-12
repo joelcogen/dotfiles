@@ -67,5 +67,11 @@ alias gx='gitx --all'
 alias gitcia='git add .; git ci -a'
 alias got='git'
 
+# POSTGRESQL ==================================================================
+alias pgstart='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
+alias pgstop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
+
 export LC_CTYPE=en_US.UTF-8
 export LANG=en_US.UTF-8
+
+alias fact="elinks -dump randomfunfacts.com | sed -n '/^| /p' | tr -d \|"

@@ -16,7 +16,6 @@
 	co = checkout
 	cob = checkout -b
 	d = diff
-	ps = push
 	pl = pull
 	poule = pull
 	m = merge
@@ -27,5 +26,8 @@
   s = stash
   rs = reset
   rsh = reset --hard
+  ps = !git-pull && git-push
+[push]
+  default = current
 [help]
   autocorrect = 1
