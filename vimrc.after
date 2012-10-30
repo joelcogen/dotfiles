@@ -3,6 +3,12 @@ colorscheme railscasts
 " haml-coffee syntax
 au BufNewFile,BufRead *.hamlc set filetype=haml
 
+au BufNewFile,BufRead *.yml.example set filetype=yaml
+
+" shared files (hospimedia)
+au BufNewFile,BufRead *.shared.rb set filetype=ruby
+au BufNewFile,BufRead *.shared.yml set filetype=yaml
+
 " remove trailing spaces on save
 function! <SID>StripTrailingWhitespaces()
   " Preparation: save last search, and cursor position.

@@ -75,3 +75,8 @@ export LC_CTYPE=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 alias fact="elinks -dump randomfunfacts.com | sed -n '/^| /p' | tr -d \|"
+
+# AUTOJUMP ====================================================================
+if [ -f `brew --prefix`/etc/autojump ]; then
+  . `brew --prefix`/etc/autojump
+fi
