@@ -1,6 +1,6 @@
 [user]
 	name = Joel Cogen
-	email = joelcogen42@gmail.com
+	email = joel@redilio.us
 [color]
 	diff = auto
 	status = auto
@@ -22,12 +22,11 @@
 	ms = merge --squash
 	b = branch
 	rb = rebase
-	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	l = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
   s = stash
   rs = reset
   rsh = reset --hard
   ps = push
-[push]
-  default = current
+  f = fetch
 [help]
   autocorrect = 1
