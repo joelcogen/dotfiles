@@ -1,2 +1,2 @@
-let mapleader = "<"
+let mapleader = ","
 call janus#disable_plugin('nerdtree')
