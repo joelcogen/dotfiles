@@ -9,6 +9,11 @@ au BufNewFile,BufRead *.yml.example set filetype=yaml
 au BufNewFile,BufRead *.shared.rb set filetype=ruby
 au BufNewFile,BufRead *.shared.yml set filetype=yaml
 
+" clear search with enter
+" https://coderwall.com/p/mwmnra
+nmap <CR> :nohlsearch<CR>
+au BufReadPost quickfix nmap <buffer> <CR> <CR>
+
 " remove trailing spaces on save
 function! <SID>StripTrailingWhitespaces()
   " Preparation: save last search, and cursor position.
