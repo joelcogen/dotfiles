@@ -1,6 +1,8 @@
 [user]
 	name = Joel Cogen
 	email = joel@redilio.us
+[github]
+  user = joelcogen
 [color]
 	diff = auto
 	status = auto

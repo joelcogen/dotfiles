@@ -55,8 +55,6 @@ alias vag='vagrant'
 alias v='vim'
 alias vv='mvim'
 
-bindkey -v
-
 # RSPEC + CUCUMBER ============================================================
 alias rspec='bundle exec rspec -c'
 alias cucumber='bundle exec cucumber -r features'
