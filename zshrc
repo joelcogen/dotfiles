@@ -47,6 +47,7 @@ alias rdbr='rake db:reset'
 alias r='rails'
 alias touchmytralala='touch tmp/restart.txt'
 alias csdm='bundle exec cap staging deploy:migrations'
+alias h='heroku'
 
 # VAGRANT =====================================================================
 alias vag='vagrant'
@@ -78,3 +79,6 @@ alias fact="elinks -dump randomfunfacts.com | sed -n '/^| /p' | tr -d \|"
 
 # AUTOJUMP ====================================================================
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
