@@ -49,16 +49,13 @@ alias touchmytralala='touch tmp/restart.txt'
 alias csdm='bundle exec cap staging deploy:migrations'
 alias h='heroku'
 
-# VAGRANT =====================================================================
-alias vag='vagrant'
-
 # VIM =========================================================================
 alias v='vim'
 alias vv='mvim'
 
 # RSPEC + CUCUMBER ============================================================
-alias rspec='bundle exec rspec -c'
-alias cucumber='bundle exec cucumber -r features'
+alias rp='bundle exec rspec -c'
+alias cuc='bundle exec cucumber -r features'
 alias nightcukes="cucumber; osascript -e 'tell application \"System Events\" to sleep'"
 alias ats='bundle exec autotest'
 
