@@ -45,9 +45,17 @@ alias rc='rails console'
 alias rdbm='rake db:migrate'
 alias rdbr='rake db:reset'
 alias r='rails'
+alias rk='rake'
+
+alias prs='powder restart'
+alias pal='powder applog'
+
 alias touchmytralala='touch tmp/restart.txt'
+
 alias csdm='bundle exec cap staging deploy:migrations'
 alias h='heroku'
+
+alias b='bundle'
 
 # VIM =========================================================================
 alias v='vim'
