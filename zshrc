@@ -70,7 +70,7 @@ alias ats='bundle exec autotest'
 # GIT =========================================================================
 alias g='git'
 alias gx='gitx --all'
-alias gitcia='git add .; git ci -a'
+alias gitcia='git add --all; git commit'
 alias got='git'
 
 # POSTGRESQL ==================================================================
