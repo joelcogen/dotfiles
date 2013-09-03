@@ -29,7 +29,7 @@
   rs = reset
   rsh = reset --hard
   ps = push
-  f = fetch
+  f = fetch -p
 [help]
   autocorrect = 1
 [push]
