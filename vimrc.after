@@ -26,3 +26,6 @@ autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 
 " w!!
 cmap w!! %!sudo tee > /dev/null %
+
+set nowrap
+set tw=0
