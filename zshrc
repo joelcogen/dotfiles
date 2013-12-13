@@ -63,6 +63,7 @@ alias vv='mvim'
 
 # RSPEC + CUCUMBER ============================================================
 alias rp='bundle exec rspec -c'
+alias srp='bundle exec spring rspec'
 alias cuc='bundle exec cucumber -r features'
 alias nightcukes="cucumber; osascript -e 'tell application \"System Events\" to sleep'"
 alias ats='bundle exec autotest'
