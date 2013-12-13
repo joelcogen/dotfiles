@@ -27,5 +27,8 @@ autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 " w!!
 cmap w!! %!sudo tee > /dev/null %
 
+" Dash
+nmap <silent> <leader>d <Plug>DashGlobalSearch
+
 set nowrap
 set tw=0
