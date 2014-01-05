@@ -34,10 +34,8 @@ export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:$HOME/.rbe
 alias ll='ls -hl'
 alias la='ls -hAl'
 
-# Rbenv =======================================================================
-eval "$(rbenv init -)"
-
-export EDITOR='vim'
+# Boxen =======================================================================
+[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
 
 # RAILS =======================================================================
 alias rs='rails server'
@@ -60,6 +58,8 @@ alias b='bundle'
 # VIM =========================================================================
 alias v='vim'
 alias vv='mvim'
+
+export EDITOR='vim'
 
 # RSPEC + CUCUMBER ============================================================
 alias rp='bundle exec rspec -c'
