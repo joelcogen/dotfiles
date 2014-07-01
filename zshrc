@@ -75,8 +75,8 @@ alias gitcia='git add --all; git commit'
 alias got='git'
 
 # POSTGRESQL ==================================================================
-alias pgstart='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
-alias pgstop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
+alias pgstart='pg_ctl -D /opt/boxen/data/postgresql start'
+alias pgstop='pg_ctl -D /opt/boxen/data/postgresql stop -m fast'
 
 export LC_CTYPE=en_US.UTF-8
 export LANG=en_US.UTF-8
@@ -85,6 +85,9 @@ alias fact="elinks -dump randomfunfacts.com | sed -n '/^| /p' | tr -d \|"
 
 # AUTOJUMP ====================================================================
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
+
+# GO ==========================================================================
+export PATH=$PATH:/opt/boxen/homebrew/opt/go/libexec/bin
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
