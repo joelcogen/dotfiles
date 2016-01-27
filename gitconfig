@@ -32,6 +32,7 @@
   ps = push
   pd = push
   f = fetch -p
+  pr = pull-request
 [help]
   autocorrect = 1
 [push]
@@ -39,4 +40,4 @@
 [hub]
   protocol = https
 [credential]
-  helper = /opt/boxen/bin/boxen-git-credential
+	helper = osxkeychain
