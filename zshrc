@@ -89,5 +89,10 @@ alias fact="elinks -dump randomfunfacts.com | sed -n '/^| /p' | tr -d \|"
 # GO ==========================================================================
 export PATH=$PATH:/opt/boxen/homebrew/opt/go/libexec/bin
 
+# Scale =======================================================================
+alias rsf='bundle exec rake spec:fast'
+alias rss='bundle exec rake spec:slow'
+
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
