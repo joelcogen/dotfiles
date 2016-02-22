@@ -48,7 +48,7 @@ alias rk='rake'
 alias prs='powder restart'
 alias pal='powder applog'
 
-alias touchmytralala='touch tmp/restart.txt'
+alias touchmytralala='touch tmp/restart.txt && say "My ding ding dong"'
 
 alias csdm='bundle exec cap staging deploy:migrations'
 alias h='heroku'
