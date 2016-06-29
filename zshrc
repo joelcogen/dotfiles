@@ -34,8 +34,8 @@ export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:$HOME/.rbe
 alias ll='ls -hl'
 alias la='ls -hAl'
 
-# Boxen =======================================================================
-[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
+# Rbenv =======================================================================
+eval "$(rbenv init -)"
 
 # RAILS =======================================================================
 alias rs='rails server'
@@ -59,7 +59,8 @@ alias b='bundle'
 alias v='vim'
 alias vv='mvim'
 
-export EDITOR='vim'
+export EDITOR='atom'
+export BUNDLER_EDITOR='atom'
 
 # RSPEC + CUCUMBER ============================================================
 alias rp='bundle exec rspec -c'
@@ -75,8 +76,8 @@ alias gitcia='git add --all; git commit'
 alias got='git'
 
 # POSTGRESQL ==================================================================
-alias pgstart='pg_ctl -D /opt/boxen/data/postgresql start'
-alias pgstop='pg_ctl -D /opt/boxen/data/postgresql stop -m fast'
+#alias pgstart='pg_ctl -D /opt/boxen/data/postgresql start'
+#alias pgstop='pg_ctl -D /opt/boxen/data/postgresql stop -m fast'
 
 export LC_CTYPE=en_US.UTF-8
 export LANG=en_US.UTF-8
@@ -87,7 +88,7 @@ alias fact="elinks -dump randomfunfacts.com | sed -n '/^| /p' | tr -d \|"
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
 # GO ==========================================================================
-export PATH=$PATH:/opt/boxen/homebrew/opt/go/libexec/bin
+#export PATH=$PATH:/opt/boxen/homebrew/opt/go/libexec/bin
 
 # Scale =======================================================================
 alias rsf='bundle exec rake spec:fast'
