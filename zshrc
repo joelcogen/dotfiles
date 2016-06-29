@@ -44,6 +44,7 @@ alias rdbm='rake db:migrate'
 alias rdbr='rake db:reset'
 alias r='rails'
 alias rk='rake'
+alias rkts='rake translation:sync'
 
 alias prs='powder restart'
 alias pal='powder applog'
