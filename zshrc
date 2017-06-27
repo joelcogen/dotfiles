@@ -77,8 +77,8 @@ alias gitcia='git add --all; git commit'
 alias got='git'
 
 # POSTGRESQL ==================================================================
-#alias pgstart='pg_ctl -D /opt/boxen/data/postgresql start'
-#alias pgstop='pg_ctl -D /opt/boxen/data/postgresql stop -m fast'
+alias pgstart='pg_ctl -D /usr/local/var/postgres start'
+alias pgstop='pg_ctl -D /usr/local/var/postgres stop -m fast'
 
 export LC_CTYPE=en_US.UTF-8
 export LANG=en_US.UTF-8
