@@ -1,6 +1,6 @@
 [user]
   name = Joel Cogen
-  email = joel@redilio.us
+  email = _@jole.io
 [github]
   user = joelcogen
 [color]
@@ -40,4 +40,4 @@
 [hub]
   protocol = https
 [credential]
-	helper = osxkeychain
+  helper = osxkeychain
