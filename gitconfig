@@ -13,6 +13,8 @@
 [core]
   editor = vim
   excludesfile = /opt/boxen/config/git/gitignore
+[pager]
+  branch = false
 [alias]
   ci = commit
   st = status

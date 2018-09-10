@@ -46,11 +46,6 @@ alias r='rails'
 alias rk='rake'
 alias rkts='rake translation:sync'
 
-alias prs='powder restart'
-alias pal='powder applog'
-
-alias touchmytralala='touch tmp/restart.txt'
-
 alias csd='cap staging deploy'
 alias h='heroku'
 
@@ -58,7 +53,6 @@ alias b='bundle'
 
 # VIM =========================================================================
 alias v='vim'
-alias vv='mvim'
 
 export EDITOR='atom'
 export BUNDLER_EDITOR='atom'
@@ -67,36 +61,22 @@ export BUNDLER_EDITOR='atom'
 alias rp='bundle exec rspec -c'
 alias srp='bundle exec spring rspec'
 alias cuc='bundle exec cucumber -r features'
-alias nightcukes="cucumber; osascript -e 'tell application \"System Events\" to sleep'"
 alias ats='bundle exec autotest'
 
 # GIT =========================================================================
 alias g='git'
-alias gx='gitx --all'
 alias gitcia='git add --all; git commit'
-alias got='git'
 
 # POSTGRESQL ==================================================================
-alias pgstart='pg_ctl -D /usr/local/var/postgres start'
-alias pgstop='pg_ctl -D /usr/local/var/postgres stop -m fast'
-
 export LC_CTYPE=en_US.UTF-8
 export LANG=en_US.UTF-8
-
-alias fact="elinks -dump randomfunfacts.com | sed -n '/^| /p' | tr -d \|"
 
 # AUTOJUMP ====================================================================
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
-# GO ==========================================================================
-#export PATH=$PATH:/opt/boxen/homebrew/opt/go/libexec/bin
-
-# Scale =======================================================================
-#alias rsf='bundle exec rake spec:fast'
-#alias rss='bundle exec rake spec:slow'
+# Homebrew ====================================================================
+HOMEBREW_UPGRADE_CLEANUP=1
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
-# DOCKER ======================================================================
-alias startdocker='docker-machine start; eval $(docker-machine env)'
