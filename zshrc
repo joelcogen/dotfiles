@@ -58,8 +58,8 @@ export EDITOR='atom'
 export BUNDLER_EDITOR='atom'
 
 # RSPEC + CUCUMBER ============================================================
-alias rp='bundle exec rspec -c'
-alias srp='bundle exec spring rspec'
+alias rp='bin/rspec'
+alias brp='bundle exec rspec'
 alias cuc='bundle exec cucumber -r features'
 alias ats='bundle exec autotest'
 
