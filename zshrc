@@ -54,8 +54,8 @@ alias b='bundle'
 # VIM =========================================================================
 alias v='vim'
 
-export EDITOR='atom'
-export BUNDLER_EDITOR='atom'
+export EDITOR='vim'
+export BUNDLER_EDITOR='vim'
 
 # RSPEC + CUCUMBER ============================================================
 alias rp='bin/rspec'
@@ -80,3 +80,8 @@ HOMEBREW_UPGRADE_CLEANUP=1
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
+
+
+# tabtab source for packages
+# uninstall by removing these lines
+[[ -f ~/.config/tabtab/__tabtab.zsh ]] && . ~/.config/tabtab/__tabtab.zsh || true
