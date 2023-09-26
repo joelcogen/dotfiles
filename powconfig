@@ -1,3 +1,0 @@
-export PATH="/opt/boxen/rbenv/shims:$PATH"
-export POW_TIMEOUT=3600
-export POW_WORKERS=3
