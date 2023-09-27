@@ -24,6 +24,8 @@ export EDITOR='vim'
 export BUNDLER_EDITOR='vim'
 export LC_CTYPE=en_US.UTF-8
 export LANG=en_US.UTF-8
+export PATH="$PATH:/opt/homebrew/opt/python@3.11/libexec/bin"
+export PATH="/opt/homebrew/opt/postgresql@15/bin/:$PATH"
 
 # BREW
 HOMEBREW_UPGRADE_CLEANUP=1
