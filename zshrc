@@ -24,8 +24,9 @@ export BUNDLER_EDITOR='vim'
 export LC_CTYPE=en_US.UTF-8
 export LANG=en_US.UTF-8
 export PATH="$PATH:/opt/homebrew/opt/python@3.11/libexec/bin"
-export PATH="/opt/homebrew/opt/postgresql@15/bin/:$PATH"
+export PATH="/opt/homebrew/opt/postgresql@17/bin/:$PATH"
 export SHARP_IGNORE_GLOBAL_LIBVIPS=1
+export NODE_EXTRA_CA_CERTS=$HOME/dev/deecide/scripts/ssl/igCA.pem
 
 # BREW
 HOMEBREW_UPGRADE_CLEANUP=1
@@ -76,3 +77,5 @@ ig_stop1() {
 ig_logs() {
     (tail -n100 -f ~/.pm2/logs/$@.log)
 }
+
+alias devops=~/dev/devops/devops.sh
