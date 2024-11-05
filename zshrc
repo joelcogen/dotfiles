@@ -68,15 +68,14 @@ source ~/.npmrc
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 
 # INSURGATE
-alias ig_dbpull='(cd ~/dev/deecide/insurgate-back && bundle exec rake db:pull)'
-alias ig_start='(cd ~/dev/deecide/scripts && yarn start)'
-alias ig_stop='(cd ~/dev/deecide/scripts && yarn stop)'
+alias ig_dbpull='(cd ~/dev/deecide/scipts && docker compose exec back rake db:pull)'
+alias ig_start='(cd ~/dev/deecide/scripts && docker compose start)'
 ig_rs() {
-    (cd ~/dev/deecide/scripts && yarn pm2 restart "$@")
+    (cd ~/dev/deecide/scripts && docker compose restart "$@")
 }
-ig_stop1() {
-    (cd ~/dev/deecide/scripts && yarn pm2 stop "$@")
+ig_stop() {
+    (cd ~/dev/deecide/scripts && docker compose stop "$@")
 }
 ig_logs() {
-    (tail -n100 -f ~/.pm2/logs/$@.log)
+    (cd ~/dev/deecide/scripts && docker compose logs -n50 "$@")
 }
