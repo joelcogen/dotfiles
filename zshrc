@@ -77,5 +77,5 @@ ig_stop() {
     (cd ~/dev/deecide/scripts && docker compose stop "$@")
 }
 ig_logs() {
-    (cd ~/dev/deecide/scripts && docker compose logs -n50 "$@")
+    (cd ~/dev/deecide/scripts && docker compose logs -n50 -f "$@")
 }
