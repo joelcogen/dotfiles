@@ -14,21 +14,21 @@ alias rk='rake'
 alias rp='bin/rspec'
 alias h='heroku'
 alias b='bundle'
-alias v='nvim'
+alias v='vim'
 alias g='git'
 alias gitcia='git add --all; git commit'
-alias devops=~/dev/misc/devops/devops.sh
+alias devops=~/dev/devops/devops.sh
 alias dc='docker compose'
 alias dce='docker compose exec'
 
 # ENV
-export EDITOR='nvim'
-export BUNDLER_EDITOR='nvim'
+export EDITOR='vim'
+export BUNDLER_EDITOR='vim'
 export LC_CTYPE=en_US.UTF-8
 export LANG=en_US.UTF-8
 export PATH="$PATH:/opt/homebrew/opt/python@3.11/libexec/bin"
 export SHARP_IGNORE_GLOBAL_LIBVIPS=1
-export NODE_EXTRA_CA_CERTS=$HOME/dev/deecide/insurgate/scripts/ssl/igCA.pem
+export NODE_EXTRA_CA_CERTS=$HOME/dev/deecide/scripts/ssl/igCA.pem
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
 # BREW
@@ -68,14 +68,19 @@ source ~/.npmrc
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 
 # INSURGATE
-alias ig_dbpull='(cd ~/dev/deecide/insurgate/scipts && docker compose exec back rake db:pull)'
-alias ig_start='(cd ~/dev/deecide/insurgate/scripts && docker compose start)'
+alias ig_start='(cd ~/dev/deecide/scripts && docker compose start)'
+ig_dbpull() {
+    (cd ~/dev/deecide/scripts && docker compose stop back sidekiq && docker compose run --rm --pull never back rake db:pull "$@" && docker compose start back sidekiq)
+}
 ig_rs() {
-    (cd ~/dev/deecide/insurgate/scripts && docker compose restart "$@")
+    (cd ~/dev/deecide/scripts && docker compose restart "$@")
 }
 ig_stop() {
-    (cd ~/dev/deecide/insurgate/scripts && docker compose stop "$@")
+    (cd ~/dev/deecide/scripts && docker compose stop "$@")
 }
 ig_logs() {
-    (cd ~/dev/deecide/insurgate/scripts && docker compose logs -n50 -f "$@")
+    (cd ~/dev/deecide/scripts && docker compose logs -n50 -f "$@")
+}
+ig_exec() {
+    (cd ~/dev/deecide/scripts && docker compose exec "$@")
 }
