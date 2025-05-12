@@ -20,6 +20,8 @@ alias gitcia='git add --all; git commit'
 alias devops=~/dev/devops/devops.sh
 alias dc='docker compose'
 alias dce='docker compose exec'
+alias kd='kamal deploy'
+alias kl='kamal app logs -f'
 
 # ENV
 export EDITOR='vim'
