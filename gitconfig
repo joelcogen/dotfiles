@@ -45,3 +45,5 @@
   helper = osxkeychain
 [pull]
 	rebase = false
+[branch]
+	autoSetupMerge = always
