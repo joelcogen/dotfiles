@@ -72,7 +72,7 @@ export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 # INSURGATE
 alias ig_start='(cd ~/dev/deecide/scripts && docker compose start)'
 ig_dbpull() {
-    (cd ~/dev/deecide/scripts && docker compose stop back sidekiq && docker compose run --rm --pull never back rake db:pull "$@" && docker compose start back sidekiq)
+    (cd ~/dev/deecide/scripts && docker compose stop back && docker compose run --rm --pull never back rake db:pull "$@" && docker compose start back)
 }
 ig_rs() {
     (cd ~/dev/deecide/scripts && docker compose restart "$@")
