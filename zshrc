@@ -22,13 +22,14 @@ alias dc='docker compose'
 alias dce='docker compose exec'
 alias kd='kamal deploy'
 alias kl='kamal app logs -f'
+alias ca='cursor-agent'
 
 # ENV
 export EDITOR='vim'
 export BUNDLER_EDITOR='vim'
 export LC_CTYPE=en_US.UTF-8
 export LANG=en_US.UTF-8
-export PATH="$PATH:/opt/homebrew/opt/python@3.11/libexec/bin"
+export PATH="$PATH:/opt/homebrew/opt/python@3.11/libexec/bin:$HOME/.local/bin"
 export SHARP_IGNORE_GLOBAL_LIBVIPS=1
 export NODE_EXTRA_CA_CERTS=$HOME/dev/deecide/scripts/ssl/igCA.pem
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
