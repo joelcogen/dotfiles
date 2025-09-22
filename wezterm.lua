@@ -27,5 +27,9 @@ config.keys = {
   },
 }
 
+config.window_frame = {
+  font_size = 14,
+}
+
 return config
 
