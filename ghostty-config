@@ -1,0 +1,7 @@
+theme = "GitHub Dark Default"
+shell-integration-features = no-cursor
+unfocused-split-opacity = 1
+split-divider-color = #555555
+macos-icon = xray
+macos-titlebar-style = tabs
+
