@@ -5,7 +5,7 @@ local act = wezterm.action
 config.initial_cols = 120
 config.initial_rows = 50
 config.font_size = 14
--- config.color_scheme = 'Gigavolt (base16)'
+config.color_scheme = 'iTerm2 Pastel Dark Background'
 config.enable_scroll_bar = true
 config.window_decorations = "RESIZE"
 
