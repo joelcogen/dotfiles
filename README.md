@@ -9,3 +9,8 @@ Git
 
     ln -s ~/dotfiles/gitconfig ~/.gitconfig
 
+Ghostty
+
+    mkdir -p ~/.config/ghostty
+    ln -s ~/dotfiles/ghostty-config ~/.config/ghostty/config
+
